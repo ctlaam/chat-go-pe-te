@@ -61,6 +61,5 @@ export default function QuickSettings(props: any) {
     }
 
     return <Container>
-        {options.map(o => <QuickSettingsButton groupID={o.groupID} option={o.option} key={o.groupID + "." + o.option.id} />)}
     </Container>;
 }

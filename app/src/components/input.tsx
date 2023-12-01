@@ -215,34 +215,6 @@ export default function MessageInput(props: MessageInputProps) {
                 </>)}
                 {!context.generating && (
                     <>
-                        {showMicrophoneButton && <Popover width={200} position="bottom" withArrow shadow="md" opened={speechError !== null}>
-                            <Popover.Target>
-                                <ActionIcon size="xl"
-                                    onClick={onSpeechStart}>
-                                    {transcribing && <Loader size="xs" />}
-                                    {!transcribing && <i className="fa fa-microphone" style={{ fontSize: '90%', color: recording ? 'red' : 'inherit' }} />}
-                                </ActionIcon>
-                            </Popover.Target>
-                            <Popover.Dropdown>
-                                <div style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    alignItems: 'flex-start',
-                                }}>
-                                    <p style={{
-                                        fontFamily: `"Work Sans", sans-serif`,
-                                        fontSize: '0.9rem',
-                                        textAlign: 'center',
-                                        marginBottom: '0.5rem',
-                                    }}>
-                                        Sorry, an error occured trying to record audio.
-                                    </p>
-                                    <Button variant="light" size="xs" fullWidth onClick={onHideSpeechError}>
-                                        Close
-                                    </Button>
-                                </div>
-                            </Popover.Dropdown>
-                        </Popover>}
                         <ActionIcon size="xl"
                             onClick={onSubmit}>
                             <i className="fa fa-paper-plane" style={{ fontSize: '90%' }} />

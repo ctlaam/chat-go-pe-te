@@ -47,7 +47,7 @@ export function TTSButton(props: { id: string, selector: string, complete: boole
 
     return (<>
         <Button variant="subtle" size="sm" compact onClickCapture={onClick} loading={active && state?.buffering}>
-            {!active && <i className="fa fa-headphones" />}
+            {/* {!active && <i className="fa fa-headphones" />}
             {!active && <span>
                 <FormattedMessage defaultMessage="Play" description="Label for the button that starts text-to-speech playback" />
             </span>}
@@ -56,7 +56,7 @@ export function TTSButton(props: { id: string, selector: string, complete: boole
             </span>}
             {active && !state?.buffering && <span>
                 <FormattedMessage defaultMessage="Stop" description="Label for the button that stops text-to-speech playback" />
-            </span>}
+            </span>} */}
         </Button>
     </>);
 }

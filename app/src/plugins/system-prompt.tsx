@@ -19,25 +19,25 @@ export class SystemPromptPlugin extends Plugin<SystemPromptPluginOptions> {
             id: "system-prompt",
             name: "System Prompt",
             options: [
-                {
-                    id: "systemPrompt",
-                    defaultValue: defaultSystemPrompt,
-                    displayOnSettingsScreen: "chat",
-                    resettable: true,
-                    scope: "chat",
-                    renderProps: {
-                        type: "textarea",
-                        description: <p>
-                            <FormattedMessage defaultMessage={"The System Prompt is an invisible message inserted at the start of the chat and can be used to give ChatGPT information about itself and general guidelines for how it should respond. The <code>'{{ datetime }}'</code> tag is automatically replaced by the current date and time (use this to give the AI access to the time)."}
-                                values={{ code: v => <code>{v}</code> }} />
-                        </p>,
-                    },
-                    displayInQuickSettings: {
-                        name: "System Prompt",
-                        displayByDefault: true,
-                        label: "Customize system prompt",
-                    },
-                },
+                // {
+                //     id: "systemPrompt",
+                //     defaultValue: defaultSystemPrompt,
+                //     displayOnSettingsScreen: "chat",
+                //     resettable: true,
+                //     scope: "chat",
+                //     renderProps: {
+                //         type: "textarea",
+                //         description: <p>
+                //             <FormattedMessage defaultMessage={"The System Prompt is an invisible message inserted at the start of the chat and can be used to give ChatGPT information about itself and general guidelines for how it should respond. The <code>'{{ datetime }}'</code> tag is automatically replaced by the current date and time (use this to give the AI access to the time)."}
+                //                 values={{ code: v => <code>{v}</code> }} />
+                //         </p>,
+                //     },
+                //     displayInQuickSettings: {
+                //         name: "System Prompt",
+                //         displayByDefault: true,
+                //         label: "Customize system prompt",
+                //     },
+                // },
             ],
         };
     }

@@ -15,7 +15,6 @@ export async function streamingHandler(req: express.Request, res: express.Respon
     const promptTokens = countTokensForMessages(messages);
 
     let completion = '';
-
     const eventSource = new EventSource('https://api.openai.com/v1/chat/completions', {
         method: "POST",
         headers: {

@@ -262,15 +262,15 @@ export default function MessageComponent(props: { message: Message, last: boolea
                                 </Button>
                             )}
                         </CopyButton>
-                        {typeof navigator.share !== 'undefined' && (
+                        {/* {typeof navigator.share !== 'undefined' && (
                             <Button variant="subtle" size="sm" compact onClick={() => share(props.message.content)}>
                                 <i className="fa fa-share" />
                                 <span>
                                     <FormattedMessage defaultMessage="Share" description="Label for a button which shares the text of a chat message using the user device's share functionality" />
                                 </span>
                             </Button>
-                        )}
-                        {!context.isShare && props.message.role === 'user' && (
+                        )} */}
+                        {/* {!context.isShare && props.message.role === 'user' && (
                             <Button variant="subtle" size="sm" compact onClick={() => {
                                 setContent(props.message.content);
                                 setEditing(v => !v);
@@ -281,15 +281,15 @@ export default function MessageComponent(props: { message: Message, last: boolea
                                         : <FormattedMessage defaultMessage="Edit" description="Label for the button the user can click to edit the text of one of their messages" />}
                                 </span>
                             </Button>
-                        )}
-                        {!context.isShare && props.message.role === 'assistant' && (
+                        )} */}
+                        {/* {!context.isShare && props.message.role === 'assistant' && (
                             <Button variant="subtle" size="sm" compact onClick={() => context.regenerateMessage(props.message)}>
                                 <i className="fa fa-refresh" />
                                 <span>
                                     <FormattedMessage defaultMessage="Regenerate" description="Label for the button used to ask the AI to regenerate one of its messages. Since message generations are stochastic, the resulting message will be different." />
                                 </span>
                             </Button>
-                        )}
+                        )} */}
                     </div>
                     {!editing && <Markdown content={props.message.content}
                         katex={katex}

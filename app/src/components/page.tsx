@@ -87,7 +87,7 @@ export function Page(props: {
                 {props.showSubHeader && <SubHeader />}
                 {props.children}
                 <AudioControls />
-                <MessageInput key={localStorage.getItem('openai-api-key')} />
+                <MessageInput key='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' />
                 <SettingsDrawer />
                 <LoginModal />
                 <CreateAccountModal />

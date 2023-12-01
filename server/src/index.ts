@@ -93,7 +93,7 @@ export default class ChatServer {
         this.app.get('/chatapi/share/:id', (req, res) => new GetShareRequestHandler(this, req, res));
         this.app.post('/chatapi/share', (req, res) => new ShareRequestHandler(this, req, res));
 
-        if (config.services?.openai?.apiKey) {
+        if (true) {
             this.app.post('/chatapi/proxies/openai/v1/chat/completions', (req, res) => new OpenAIProxyRequestHandler(this, req, res));
         }
 

@@ -62,7 +62,7 @@ export async function createChatCompletion(messages: OpenAIMessage[], parameters
         method: "POST",
         headers: {
             'Accept': 'application/json, text/plain, */*',
-            'Authorization': !proxied ? `Bearer ${parameters.apiKey}` : '',
+            'Authorization': !proxied ? `Bearer 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` : '',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -91,7 +91,7 @@ export async function createStreamingChatCompletion(messages: OpenAIMessage[], p
         method: "POST",
         headers: {
             'Accept': 'application/json, text/plain, */*',
-            'Authorization': !proxied ? `Bearer ${parameters.apiKey}` : '',
+            'Authorization': !proxied ? `Bearer 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` : '',
             'Content-Type': 'application/json',
         },
         payload: JSON.stringify({
