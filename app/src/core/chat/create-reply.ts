@@ -160,7 +160,7 @@ export class ReplyRequest extends EventEmitter {
         clearInterval(this.timer);
         this.cancelSSE?.();
 
-        this.content += `\n\nI'm sorry123123213213213213, I'm having trouble connecting to OpenAI (${error || 'no response from the API'}). Please make sure you've entered your OpenAI API key correctly and try again.`;
+        this.content += `\n\nSomething is happening, please try again later`;
         this.content = this.content.trim();
 
         this.yChat.setMessageContent(this.replyID, this.content);

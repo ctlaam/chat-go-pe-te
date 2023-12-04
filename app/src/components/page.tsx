@@ -87,7 +87,7 @@ export function Page(props: {
                 {props.showSubHeader && <SubHeader />}
                 {props.children}
                 <AudioControls />
-                <MessageInput key='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' />
+                <MessageInput key='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' />
                 <SettingsDrawer />
                 <LoginModal />
                 <CreateAccountModal />

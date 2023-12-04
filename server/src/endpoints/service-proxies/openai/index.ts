@@ -5,7 +5,7 @@ import { basicHandler } from './basic';
 import { config } from '../../../config';
 
 export const endpoint = 'https://api.openai.com/v1/chat/completions';
-export const apiKey = "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";
+export const apiKey = "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";
 
 export default class OpenAIProxyRequestHandler extends RequestHandler {
     async handler(req: express.Request, res: express.Response) {

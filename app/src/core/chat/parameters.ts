@@ -10,7 +10,7 @@ export function loadParameters(
   id: string | null | undefined = null
 ): Parameters {
   const apiKey =
-    "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" || undefined;
+    "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" || undefined;
   const key = id ? `parameters-${id}` : "parameters";
   try {
     const raw = localStorage.getItem(key);
@@ -33,7 +33,7 @@ export function saveParameters(id: string, parameters: Parameters) {
 
     // localStorage.setItem(
     //   `openai-api-key`,
-    //   "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"
+    //   "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"
     // );
   }
 }

@@ -28,7 +28,7 @@ export default class S3ObjectStore extends ObjectStore {
             Key: key,
             Body: value,
             ContentType: contentType,
-            StorageClass: "INTELLIGENT_TIERING",
+            StorageClass: undefined,
         };
         await s3.send(new PutObjectCommand(params));
     }
